@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 public class MainTest extends Base {
 
     private static final Logger log = LoggerFactory.getLogger(MainTest.class);
+    private static final String redirectionLink = "https://www.google.com";
 
     private CreatePage createPage;
     private ReadPage readPage;
@@ -64,7 +65,7 @@ public class MainTest extends Base {
                     .get(response.getHeader("Location"))
                     .then()
                     .statusCode(200)
-                    .body("url", equalTo("https://www.google.com"));
+                    .body("url", equalTo(redirectionLink));
         } else if (response.getStatusCode() == 404) {
             // Handle the 404 response
             assertThat(response.getStatusCode(), equalTo(404));

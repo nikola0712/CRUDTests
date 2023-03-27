@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="803cb383-3b76-4c28-8182-f2aef2a62d56" name="Changes" comment="Project for CRUD tests on free API">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CRUDTests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRUDTests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="803cb383-3b76-4c28-8182-f2aef2a62d56" name="Changes" comment="Added test for 401 unauthorized">
       <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +35,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/CRUDTests"
   }
 }]]></component>
@@ -123,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679950065966</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added test for 401 unauthorized">
+      <created>1679951577979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679951577979</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project for CRUD tests on free API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project for CRUD tests on free API" />
+    <MESSAGE value="Added test for 401 unauthorized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for 401 unauthorized" />
   </component>
 </project>
