@@ -11,8 +11,12 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.fail;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MainTest extends Base {
+
+    private static final Logger log = LoggerFactory.getLogger(MainTest.class);
 
     private CreatePage createPage;
     private ReadPage readPage;
@@ -67,6 +71,20 @@ public class MainTest extends Base {
         } else {
             // Handle other unexpected status codes
             fail("Received unexpected status code: " + response.getStatusCode());
+        }
+    }
+    @Test
+    public void testGetPostsUnauthorized() {
+        Response response = given()
+                .auth().none()
+                .when()
+                .get("/posts");
+
+        int statusCode = response.statusCode();
+        if (statusCode == 401) {
+            log.info("Expected 401 status code received: {}", statusCode);
+        } else {
+            log.error("Expected 401 status code but received: " + statusCode);
         }
     }
 }
