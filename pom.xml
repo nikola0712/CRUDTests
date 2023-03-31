@@ -41,6 +41,12 @@
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- Jackson for serialization -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.0-rc2</version>
+        </dependency>
         <!-- Hamcrest for more expressive assertions -->
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -48,12 +54,11 @@
             <version>2.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- Javafaker for creating fake data -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>2.0.5</version>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
-
-
 </project>
